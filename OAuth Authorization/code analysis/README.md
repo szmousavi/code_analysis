@@ -9,8 +9,9 @@ Although OAuth was first introduced as an authorization framework, it has been w
 
 In the implicit grant (which is simpler than the authorization code grant), in step 4, the SP directly responds with an access token instead of an authorization code, without authenticating the RP. Resource owner password credentials and client credentials grants are rarely used.
 
-## 1) Local storage of relying party secrets (e.g.,  bundling secrets as field variables, resource files, or constants in code)
-   Although RP secrets are intended to be used by SPs to authenticate the RP, many developers store these secrets on the client-side application, posing a significant security threat to the user’s privacy. As a result, an attacker could retrieve the secret through reverse engineering, and use it to impersonate a benign application and request an access token from the SPs.
+## 1) Local storage of relying party secrets 
+(e.g.,  bundling secrets as field variables, resource files, or constants in code)
+Although RP secrets are intended to be used by SPs to authenticate the RP, many developers store these secrets on the client-side application, posing a significant security threat to the user’s privacy. As a result, an attacker could retrieve the secret through reverse engineering, and use it to impersonate a benign application and request an access token from the SPs.
 ## 2) Local storage of access tokens (e.g., storing in filesystem): 
 The storage of access tokens is a critical security concern as they provide RPs access to a user’s protected resources hosted by SP. Simply storing them on client devices can easily compromise user accounts. Attackers may steal locally-stored tokens, consequently gaining unauthorized access to user accounts and sensitive information stored in SPs.
 4) Inadequate transmission protection (e.g., transmitting security-sensitive information in plaintext): OAuth security heavily depends on the secure transmission of messages during the OAuth process. Transmitting messages in plaintext lets attackers eavesdrop and steal access tokens or other OAuth credentials. It is crucial to use SSL/TLS encryption when transmitting confidential information during OAuth transactions to prevent this exploit.

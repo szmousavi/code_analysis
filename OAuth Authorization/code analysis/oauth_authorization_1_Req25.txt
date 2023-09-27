@@ -1,0 +1,17 @@
+1) Yes, local storage of relying party secrets. The application loads client secrets from a static local file ("/credentials.json").
+
+2) Yes, local storage of access tokens. The application stores user credentials in a local file system directory ("tokens").
+
+3) No, inadequate transmission protection. Google's libraries are used for communication and they provide transmission protection.
+
+4) No, lack or misuse of the state parameter. The code does not deal with the state parameter in OAuth flow.
+
+5) Yes, client-side API call. The code appears to be running on a client-side application and is responsible for the OAuth flow, which is an insecure practice.
+
+6) No, insecure redirection options. The code does not involve any redirection options.
+
+7) No, lack of authentication. The application authenticates the service provider using Google's libraries, using client secrets loaded from a local file.
+
+8) Yes, lack of PKCE parameters for authorization code grant. The authorization code grant type is used, but there is no use of PKCE parameters.
+
+9) No, insecure grant types. The application is using an Authorization Code Flow, which is one of the most secure OAuth 2.0 flows when used correctly. However, the implementation lacks PKCE, which can make it less secure.

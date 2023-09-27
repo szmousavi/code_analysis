@@ -1,0 +1,17 @@
+1) Yes, local storage of relying party secrets is found in the code. The code loads client ID and Client Secret from 'credentials.json' file.
+ 
+2) Yes, local storage of access tokens is found in the code. Google's AuthorizationCodeFlow uses FileDataStoreFactory to save access and refresh tokens in the 'tokens' directory locally.
+
+3) No, there isn't any inadequate transmission protection vulnerabilities found, the code uses Google's OAuth2 protocol, which transmit sensitive data over HTTPS.
+
+4) No, lacks or misuse of the state parameter is not found in this code, no state parameters are used here.
+
+5) No, client-side API call vulnerability is not found. No client device is involved in API calls.
+
+6) No, insecure redirection options is not found in this code. The code doesn't include any Android-specific WebView objects.
+
+7) No, lack of authentication is not found, as the GoogleAuthorizationCodeFlow performs necessary authentication steps.
+
+8) Yes, lack of PKCE parameters for authorization code grant vulnerability is found, PKCE parameters are not used in the authorization flow
+
+9) No, insecure grant types vulnerability is not found. The code uses 'Authorization Code Grant' which is a secure grant type in OAuth 2.0.

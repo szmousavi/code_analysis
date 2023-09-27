@@ -1,0 +1,9 @@
+1) Yes, the Client ID and Client Secret are stored as local constants within the code.
+2) Yes, tokens are stored locally in the filesystem in a directory named "tokens".
+3) No, the API calls are made over HTTPS, which implies the usage of SSL/TLS for transmission protection.
+4) Cannot determine as the 'state' parameter is not used in the provided code.
+5) Yes, the Client-side API call is made in this Java application. The security safety depends on how the application handles client-side secrecy and trust.
+6) No, redirection appears to be secure as it is utilizing a pre-registered redirect URI.
+7) Cannot determine as the authentication of the service provider is not demonstrated in the given code.
+8) Yes, the PKCE parameters for authorization code grant are not used in the code.
+9) Cannot determine from the given code.

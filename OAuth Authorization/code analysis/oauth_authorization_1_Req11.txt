@@ -1,0 +1,17 @@
+1) Yes, this code has local storage of relying party secrets. The client secret is stored locally and loaded through `FileInputStream(CLIENT_SECRET_DIR)`.
+
+2) Yes, access tokens are stored locally in the filesystem. This is shown in the `setDataStoreFactory(new FileDataStoreFactory(new File(TOKENS_DIRECTORY_PATH)))` line of code.
+
+3) No, there is no evidence of inadequate transmission protection in this provided code. It uses HTTPS for communication which by default enforces encryption for data transmission.
+
+4) No, this code doesn't seem to misuse the state parameter for OAuth2.0; in fact, it does not reference the state parameter at all.
+
+5) No, there are no client-side API calls in this code. The code uses server-side operations for OAuth 2.0.
+
+6) No, there are no insecure redirection options used, such as WebView in Android, shown in this code.
+
+7) No, there is no lack of authentication in this code. The code uses Google's OAuth 2.0 for authentication.
+
+8) Yes, the code lacks PKCE parameters for authorization code grant. There's no code for generating or verifying a code challenge and verifier which are required aspects of PKCE (Proof Key for Code Exchange).
+
+9) No, this code uses authorization code grant which is a secure grant type. There's no evidence of using insecure grant types like implicit.

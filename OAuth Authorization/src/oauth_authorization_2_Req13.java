@@ -1,3 +1,9 @@
+// Task: oauth_authorization_2
+// Develop a Java program that supports saving an event to the user Google Calendar on her behalf. 
+// The primary goal is to solely implement the authorization functionality, and other operations, such as event creation, are not within the scope of this task.
+// Note: The application has been already registered with the Google API, and a Client ID and Client Secret are accessible.
+    
+
 // required imports
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;

@@ -1,3 +1,9 @@
+// Task: oauth_authorization_3
+// Develop a Java program for a "Social Networking" application that facilitates contact suggestions to the user by accessing their Google contacts, with their permission. 
+// The primary goal is to exclusively focus on implementing the authorization functionality, and other operations, such as contact suggestion, are not within the scope of this task.
+// Note: The application has been already registered with the Google API, and a Client ID and Client Secret are accessible.
+    
+
 import com.google.api.client.auth.oauth2.AuthorizationCodeFlow;
 import com.google.api.client.auth.oauth2.AuthorizationCodeRequestUrl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;

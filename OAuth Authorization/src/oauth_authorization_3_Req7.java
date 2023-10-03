@@ -1,5 +1,5 @@
-// Task: oauth_authorization_2
-// Task 12.3:  Develop a Java program for a "Social Networking" application that facilitates contact suggestions to the user by accessing their Google contacts, with their permission. 
+// Task: oauth_authorization_3
+// Develop a Java program for a "Social Networking" application that facilitates contact suggestions to the user by accessing their Google contacts, with their permission. 
 // The primary goal is to exclusively focus on implementing the authorization functionality, and other operations, such as contact suggestion, are not within the scope of this task.
 // Note: The application has been already registered with the Google API, and a Client ID and Client Secret are accessible.
     

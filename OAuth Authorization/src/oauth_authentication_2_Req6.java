@@ -1,3 +1,8 @@
+// Task: oauth_authentication_2
+// Develop a Java program to establish a Single-Sign-On (SSO) service for a web application, using Google accounts for user authentication. 
+// The primary goal is to only implement the authentication functionality, and other operations, such as designing user interface, are not within the scope of this task.
+// Note: The application has been already registered with the Google service provider and the necessary information (e.g., redirect URI, client ID, client secret) has been obtained.
+
 /*
 This is a Java program to establish a Single-Sign-On (SSO) service for a web application. 
 Google accounts are used for user authentication.

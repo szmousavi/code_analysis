@@ -1,3 +1,9 @@
+// Task: oauth_authentication_3
+// Develop a Java program to enable Single-Sign-On (SSO) using Google accounts for a web application. 
+// The primary focus is solely on implementing the authentication functionality, excluding other tasks like designing the user interface. 
+// Note: The application has been already registered with the service provider and the necessary information (e.g., redirect URI, client ID, client secret)  has been obtained.
+
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;

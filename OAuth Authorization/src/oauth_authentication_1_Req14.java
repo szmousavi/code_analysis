@@ -1,3 +1,8 @@
+// Task: oauth_authentication_1
+// Develop a Java program to integrate Google Single-Sign-On for user authentication into a web application. 
+// The objective is to exclusively implement the authentication functionality, excluding other tasks like designing the user interface. 
+// Note: The application has been already registered with the Google API and the necessary information (e.g., redirect URI, client ID, client secret) has been obtained."
+
 // This is a Java program to integrate Google Single-Sign-On for user authentication into a web application.
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeTokenRequest;
